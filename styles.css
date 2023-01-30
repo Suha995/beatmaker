@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body{
+    text-align: center;
+    padding: 5% 10% 5% 10%;
+}
+
+h1{
+    margin-bottom: 10%;
+} 
+
+.visual{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .pads{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+.pads > div{
+    width: 100px;
+    height: 100px;
+    flex: auto;
+}
+
+
+.flying-area > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+    animation-name: fly;
+    animation-duration: 2s;
+    opacity: 0;
+  }
+
+  @keyframes fly{
+    0% {
+        bottom: 0%;
+        left: 20%;
+        opacity: 1;
+      }
+      50% {
+        bottom: 50%;
+        left: 50%;
+        opacity: 0.5;
+      }
+    
+      100% {
+        bottom: 00%;
+        left: 80%;
+      }
+  }
+
+.pad1{
+    background-color: lightblue;
+}
+.pad2{
+    background-color: lightcoral;
+}
+.pad3{
+    background-color: lightpink;
+}
+.pad4{
+    background-color: lightyellow;
+}
+.pad5{
+    background-color: lightgreen;
+}
+.pad6{
+    background-color: lightslategray;
+}
